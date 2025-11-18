@@ -10,9 +10,9 @@ export const env = createEnv({
     OPENROUTER_API_KEY: z.string().min(1).optional(),
   },
   client: {
-    NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID: z.string().min(1),
-    NEXT_PUBLIC_GOOGLE_ADSENSE_CLIENT_ID: z.string().min(1),
-    NEXT_PUBLIC_MICROSOFT_CLARITY_ID: z.string().min(1),
+    NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID: z.string().min(1).optional(),
+    NEXT_PUBLIC_GOOGLE_ADSENSE_CLIENT_ID: z.string().min(1).optional(),
+    NEXT_PUBLIC_MICROSOFT_CLARITY_ID: z.string().min(1).optional(),
   },
   runtimeEnv: {
     SITE_URL: process.env.SITE_URL,

@@ -33,7 +33,7 @@ export const Intro = () => {
       >
         <img
           src="/images/profile.jpg"
-          alt="Yash Kapure Profile"
+          alt="Profile Photo"
           className="size-36 rounded-full object-cover shadow-xl shadow-yellow-400/40 ring-2 ring-yellow-400 grayscale transition-all duration-300 hover:scale-105 hover:grayscale-0"
         />
       </motion.div>
@@ -71,7 +71,7 @@ export const Intro = () => {
         }
         className="text-muted-foreground mt-2 text-xs"
       >
-        Currently based in United Kingdom — open to relocate
+        Based in Philippines — Prefer remote jobs, but open to relocate
       </motion.p>
       <motion.h1
         initial={prefersReducedMotion ? { opacity: 1 } : { opacity: 0, y: 100 }}
@@ -82,7 +82,8 @@ export const Intro = () => {
         <span className="bg-gradient-to-r from-rose-700 to-pink-600 bg-clip-text text-transparent">
           Yash Kapure
         </span>
-        - Frontend Engineer with Full-Stack Expertise.
+        - Full Stack Engineer with over 
+        <span className="bg-gradient-to-r from-rose-700 to-pink-600 bg-clip-text text-transparent"> 8</span> years of experience.        
       </motion.h1>
       <motion.p
         initial={prefersReducedMotion ? { opacity: 1 } : { opacity: 0, y: 100 }}
@@ -90,13 +91,17 @@ export const Intro = () => {
         transition={prefersReducedMotion ? { duration: 0 } : { delay: 0.1 }}
         className="text-muted-foreground max-w-xl"
       >
-        I build fast, accessible, and SEO-friendly web applications using
-        React.js, Next.js, Tailwind CSS, and shadcn/ui. With 3.5+ years of
-        experience and strong full-stack skills in JavaScript and TypeScript, I
-        am passionate about creating smooth user interfaces, maintaining
-        excellent UI/UX, and writing clean, maintainable code. I craft modern
-        user experiences while also delivering scalable backend integrations
-        when needed.
+        Innovative full-stack developer with 8 years of experience building high-impact products using 
+        <span className='text-lm font-bold'>JavaScript</span>, 
+        <span className='text-lm font-bold'>TypeScript</span>, 
+        <span className='text-lm font-bold'>Python</span>, 
+        <span className='text-lm font-bold'>React</span>, 
+        <span className='text-lm font-bold'>Next.js</span>, and 
+        <span className='text-lm font-bold'> Django</span>. 
+        Delivered multiple successful launches 
+        in <span className='text-lm font-bold'>CRM</span>, <span className='text-lm font-bold'>B2B SaaS</span>, and <span className='text-lm font-bold'>Marketing automation</span>, driving measurable gains in user engagement and product performance. 
+        Known for turning complex requirements into fast, scalable solutions and accelerating delivery for cross-functional teams. 
+        Brings a strong product mindset and a track record of shipping features that move key metrics. 
       </motion.p>
       <motion.div
         initial={prefersReducedMotion ? { opacity: 1 } : { opacity: 0, y: 100 }}
@@ -130,9 +135,9 @@ export const Intro = () => {
             asChild
           >
             <a
-              href="/cv/Yash Kapure CV.pdf"
+              href="/cv/CV.pdf"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="Resume"
             >
               Download CV{' '}
               <Icons.download aria-hidden="true" className="ml-2 size-4" />
@@ -152,32 +157,12 @@ export const Intro = () => {
           </Button>
           <Button variant="outline" size="icon" asChild>
             <Link
-              href="https://github.com/Yashkapure06"
+              href="https://github.com/am0127"
               aria-label="Github"
               target="_blank"
               rel="noopener noreferrer"
             >
               <Icons.github className="size-5" />
-            </Link>
-          </Button>
-          <Button variant="outline" size="icon" asChild>
-            <Link
-              href="https://www.instagram.com/_yashkapure_"
-              aria-label="Instagram"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Icons.instagram className="size-5" />
-            </Link>
-          </Button>
-          <Button variant="outline" size="icon" asChild>
-            <Link
-              href="https://twitter.com/KapureYash"
-              aria-label="Twitter"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Icons.twitter className="size-5" />
             </Link>
           </Button>
         </div>
